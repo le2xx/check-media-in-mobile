@@ -96,7 +96,7 @@ module.exports = (env, argv) => ({
     new HtmlWebpackPlugin({ template: './src/app/pages/index.pug' }),
     new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }]),
     new BaseHrefWebpackPlugin({
-      baseHref: argv.mode === 'development' ? '/' : 'https://le2xx.github.io/frontend-starter-kit/'
+      baseHref: argv.mode === 'development' ? '/' : 'https://le2xx.github.io/check-media-in-mobile/'
     })
   ]
 });
