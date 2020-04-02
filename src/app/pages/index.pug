@@ -2,11 +2,18 @@ extends ../components/layout/layout
 
 block body
   div.content
-    h1.title This check media queries in mobile device
-    input(type="text" class="input" placeholder="input text...")
-    div.orientation
-      div.landscape
-      span.label - landscape
-    div.orientation
-      div.portrait
-      span.label - portrait
+    h1.title This check media queries and object window.screen in mobile devices
+    div.input-wrap
+      input(type="text" class="input" placeholder="input text...")
+      button.submit submit
+    fieldset
+      legend Media queries
+      div.orientation
+        div.landscape
+        span.label - landscape
+      div.orientation
+        div.portrait
+        span.label - portrait
+    fieldset
+      legend Object window.screen
+      div.screen-info
