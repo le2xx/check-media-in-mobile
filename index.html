@@ -20,19 +20,29 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>This check media queries in mobile device</title>
+    <title>This check media queries and object window.screen in mobile devices</title>
     <base href="https://le2xx.github.io/check-media-in-mobile/">
   </head>
   <body>
     <div class="content">
-      <h1 class="title">This check media queries in mobile device</h1>
-      <input class="input" type="text" placeholder="input text...">
-      <div class="orientation">
-        <div class="landscape"></div><span class="label">- landscape</span>
+      <h1 class="title">This check media queries and object window.screen in mobile devices</h1>
+      <div class="input-wrap">
+        <input class="input" type="text" placeholder="input text...">
+        <button class="submit">submit</button>
       </div>
-      <div class="orientation">
-        <div class="portrait"></div><span class="label">- portrait</span>
-      </div>
+      <fieldset>
+        <legend>Media queries</legend>
+        <div class="orientation">
+          <div class="landscape"></div><span class="label">- landscape</span>
+        </div>
+        <div class="orientation">
+          <div class="portrait"></div><span class="label">- portrait</span>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Object window.screen</legend>
+        <div class="screen-info"></div>
+      </fieldset>
     </div>
   <script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="index.bundle.js"></script></body>
 </html>
